@@ -1,0 +1,37 @@
+<div class="container">
+  <img src="{{ 'avatar.png' | asset_url }}" class="logo">
+  <h1>{{ section.settings.title }}</h1>
+  {% render 'text' %}
+
+
+  <div>
+    {% content_for 'blocks' %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Homepage",
+  "blocks": [
+    {
+      "type": "@theme"
+    },
+    {
+      "type": "@app"
+    }
+  ],
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "This is shopify clean slate"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Homepage"
+    }
+  ]
+}
+{% endschema %}
