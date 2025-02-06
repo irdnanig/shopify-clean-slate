@@ -1,4 +1,4 @@
-# Shopify Clean State Theme 🚀
+# Shopify Clean State 🚀
 
 A minimal Shopify theme built with Online Store 2.0 features like theme blocks and JSON templates.
 
